@@ -23,35 +23,30 @@ def createSpace(beamDimensions,
 
     floors = []
 
-    beams = None   # struct of beams
-    pillars = None # struct of pillars
-
     for height in interstoryHeights:
+        
+        pillar = CUBOID([px, py, height])
+        beams = []
+        pillars = [pillar]
+        beamWidth = py / 2.0 # the first beam is half py size wider than the
+                             # others so we account for this using beamWidth
 
-        # if structures don't exists we create them
-        if not beams and not pillars:
-            pillar = CUBOID([px, py, height])
-            beamsList = []
-            pillarsList = [pillar]
-            beamSize = py / 2.0 # the first beam is half py size wider than the
-                                # others so we account for this
+        for i in range(0, len(axesDistances) - 1):
+            distance = axesDistances[i]
+            beamWidth += distance + py
+            beams += [CUBOID([bx, beamWidth, bz]), T(2)(beamWidth)]
+            pillars += [T(2)(distance + py), pillar]
+            beamWidth = 0
 
-            for i in range(0, len(axesDistances) - 1):
-                distance = axesDistances[i]
-                beamSize += distance + py
-                beamsList += [CUBOID([bx, beamSize, bz]), T(2)(beamSize)]
-                pillarsList += [T(2)(distance + py), pillar]
-                beamSize = 0
+        distance = axesDistances[-1]
 
-            # the last beam has the same width as the first
-            distance = axesDistances[-1]
-            beamsList.append(CUBOID([bx, distance + py + (py / 2.0), bz]))
-            pillarsList += [T(2)(distance + py), pillar]
+        # the last beam has the same width as the first. We add beamWidth
+        # to account for the case where there are two pillars.
+        beams.append(CUBOID([bx, distance + py + (py / 2.0) + beamWidth, bz]))
 
-            # structures
-            beams = STRUCT(beamsList)
-            pillars = STRUCT(pillarsList)
+        # last pillar
+        pillars += [T(2)(distance + py), pillar]
 
-        floors += [pillars, T(3)(height), beams, T(3)(bz)]
+        floors += [STRUCT(pillars), T(3)(height), STRUCT(beams), T(3)(bz)]
 
     return STRUCT(floors)
