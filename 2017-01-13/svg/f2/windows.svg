@@ -5,6 +5,8 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg4683"
    version="1.1"
    width="2096"
@@ -12,76 +14,48 @@
    viewBox="0 0 2096 1182"
    enable-background="new">
   <g
-     id="layer4">
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4693"
-       width="25"
-       height="756"
-       x="154"
-       y="218" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4697"
-       width="25"
-       height="155"
-       x="928"
-       y="218" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4701"
-       width="50"
-       height="25"
-       x="878"
-       y="218" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4703"
-       width="25"
-       height="94"
-       x="928"
-       y="880" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4705"
-       width="639"
-       height="25"
-       x="314"
-       y="974" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4707"
-       width="25"
-       height="320"
-       x="928"
-       y="419" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4763"
-       width="55"
-       height="25"
-       x="154"
-       y="974" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4695"
-       width="107"
-       height="25"
-       x="179"
-       y="218" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4695-5"
-       width="95"
-       height="25"
-       x="426"
-       y="218" />
-    <rect
-       style="fill:#ed00ff;fill-opacity:1;stroke:none"
-       id="rect4701-6"
-       width="114"
-       height="25"
-       x="641"
-       y="218" />
-  </g>
+      id="layer2">
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:none"
+     id="rect4146"
+     width="140"
+     height="25"
+     x="286"
+     y="218" />
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:none"
+     id="rect4146-3"
+     width="120"
+     height="25"
+     x="521"
+     y="218" />
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:none"
+     id="rect4146-6"
+     width="123"
+     height="25"
+     x="755"
+     y="218" />
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:none"
+     id="rect4181"
+     width="25"
+     height="45"
+     x="928"
+     y="373" />
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:none"
+     id="rect4181-5"
+     width="25"
+     height="141"
+     x="928"
+     y="739" />
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:none"
+     id="rect4198"
+     width="105"
+     height="25"
+     x="209"
+     y="974" />
+</g>
 </svg>
